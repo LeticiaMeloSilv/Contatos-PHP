@@ -1,4 +1,6 @@
 <?php
+function conectar() {
+
     $servername = "localhost:3306";
     $username = "root";
     $password = "bcd127";
@@ -10,3 +12,5 @@
         die("Connection failed: " . $conn->connect_error);
     }
     return $conn;
+}
+    
